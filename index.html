@@ -227,10 +227,10 @@ body {
     margin-bottom: var(--spacing-xs);
 }
 
-.experience-title {
-    color: var(--accent-green);
+.experience-company {
+    color: var(--accent-purple);
     font-weight: 600;
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-large);
 }
 
 .experience-date {
@@ -238,9 +238,10 @@ body {
     font-size: var(--font-size-small);
 }
 
-.experience-company {
-    color: var(--accent-purple);
-    font-size: var(--font-size-small);
+.experience-title {
+    color: var(--accent-green);
+    font-weight: 600;
+    font-size: var(--font-size-base);
     margin-bottom: var(--spacing-xs);
 }
 
@@ -318,40 +319,6 @@ body {
 .education-institution {
     color: var(--accent-purple);
     font-size: var(--font-size-small);
-}
-
-/* Footer */
-.footer {
-    margin-top: var(--spacing-xl);
-    padding-top: var(--spacing-lg);
-}
-
-.footer-separator {
-    color: var(--border-color);
-    font-size: var(--font-size-small);
-    margin-bottom: var(--spacing-xs);
-}
-
-.footer-content {
-    display: flex;
-    justify-content: center;
-    gap: var(--spacing-sm);
-    color: var(--text-secondary);
-    font-size: var(--font-size-small);
-}
-
-/* Cowsay ASCII art */
-.cowsay {
-    display: flex;
-    justify-content: center;
-    margin-top: var(--spacing-sm);
-}
-
-.cowsay pre {
-    color: var(--text-secondary);
-    font-size: 11px;
-    line-height: 1.3;
-    text-align: left;
 }
 
 /* Responsive Design */
@@ -503,7 +470,7 @@ a:hover {
         <div class="section">
             <h2 class="section-title">$ whoami</h2>
             <div class="section-content">
-                <p>Software Developer with over 10 years of experience building robust iOS solutions across diverse teams and technologies. My journey began at FUN and MOBILE in Warsaw, progressed through SoftServe where I contributed to projects for global enterprise technology leaders, and continues at Stfalcon where I combine hands-on development with mentoring and technical leadership.</p>
+                <p>Software Developer with over 10 years of experience building robust iOS solutions across diverse teams and technologies. My journey began at FUN and MOBILE in Warsaw, progressed through SoftServe where I contributed to projects for global enterprise technology leaders, and Stfalcon where I combined hands-on development with mentoring and technical leadership, and continues at SQUAD as a Senior iOS Developer.</p>
                 <p>While UI development has become routine, I thrive on solving abstract, technically challenging problems. I have a particular passion for IoT technologies including CoreBLE and CoreNFC, bridging the gap between hardware and software. Beyond iOS, I actively explore low-level programming with C/C++, have a strong interest system-level engineering.</p>
             </div>
         </div>
@@ -517,15 +484,15 @@ a:hover {
                 </div>
                 <div class="skill-category">
                     <span class="skill-label">Frameworks:</span>
-                    <span class="skill-value">UIKit, RxSwift, Core Bluetooth, Core NFC, StoreKit</span>
+                    <span class="skill-value">SwiftUI, UIKit, Swift Concurrency (async/await), GCD, Combine, RxSwift, Core Bluetooth, Core NFC, StoreKit, MapKit, Google Maps SDK, XCTest, Swift Testing</span>
                 </div>
                 <div class="skill-category">
                     <span class="skill-label">Tools:</span>
-                    <span class="skill-value">Xcode, Git, CocoaPods, SPM, GCD, MapKit, Fastlane, GitHub Actions</span>
+                    <span class="skill-value">Xcode, Cursor, Git, CocoaPods, SPM, Fastlane, GitHub Actions</span>
                 </div>
                 <div class="skill-category">
                     <span class="skill-label">Architectures:</span>
-                    <span class="skill-value">MVVM-R, MVC, Clean Architecture, S.O.L.I.D</span>
+                    <span class="skill-value">MVVM-R, MVC, Composable Architecture</span>
                 </div>
             </div>
         </div>
@@ -535,10 +502,23 @@ a:hover {
             <div class="section-content">
                 <div class="experience-item">
                     <div class="experience-header">
-                        <span class="experience-title">Senior iOS Developer</span>
-                        <span class="experience-date">2020 - Present</span>
+                        <span class="experience-company">SQUAD · Full-time · Lviv, Ukraine (Remote)</span>
+                        <span class="experience-date">Feb 2026 - Present</span>
                     </div>
-                    <div class="experience-company">Stfalcon</div>
+                    <div class="experience-title">Senior iOS Developer</div>
+                    <ul class="experience-list">
+                        <li>iOS development as part of a distributed remote product team</li>
+                        <li>Owning feature delivery end-to-end: architecture, implementation, testing, and release</li>
+                        <li>Driving code quality through code reviews and engineering best practices</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <span class="experience-company">Stfalcon LLC · Full-time · Lviv, Ukraine (Remote)</span>
+                        <span class="experience-date">Feb 2020 - Jan 2026</span>
+                    </div>
+                    <div class="experience-title">Senior iOS Developer</div>
                     <ul class="experience-list">
                         <li>iOS development for complex B2B and medical-grade applications</li>
                         <li>Architecting solutions with advanced iOS frameworks including CoreBluetooth and CoreNFC</li>
@@ -550,10 +530,10 @@ a:hover {
 
                 <div class="experience-item">
                     <div class="experience-header">
-                        <span class="experience-title">Middle iOS Developer</span>
-                        <span class="experience-date">2018 - 2020</span>
+                        <span class="experience-company">Freelance (Self-employed) · Lviv, Ukraine (Remote)</span>
+                        <span class="experience-date">Mar 2019 - Dec 2019</span>
                     </div>
-                    <div class="experience-company">Nymgo S.A</div>
+                    <div class="experience-title">Senior iOS Developer</div>
                     <ul class="experience-list">
                         <li>Developed secure networking solutions using Network Extensions framework</li>
                         <li>Integrated subscription-based monetization with StoreKit</li>
@@ -564,10 +544,10 @@ a:hover {
 
                 <div class="experience-item">
                     <div class="experience-header">
-                        <span class="experience-title">Middle iOS Developer</span>
-                        <span class="experience-date">2016 - 2018</span>
+                        <span class="experience-company">SoftServe Smart Solutions · Full-time · Lviv, Ukraine (On-site)</span>
+                        <span class="experience-date">Dec 2016 - Feb 2019</span>
                     </div>
-                    <div class="experience-company">SoftServe</div>
+                    <div class="experience-title">iOS Developer</div>
                     <ul class="experience-list">
                         <li>Developed iOS applications for global enterprise clients</li>
                         <li>Integrated complex third-party SDKs for enterprise security</li>
@@ -579,10 +559,10 @@ a:hover {
 
                 <div class="experience-item">
                     <div class="experience-header">
-                        <span class="experience-title">Junior iOS Developer</span>
-                        <span class="experience-date">2014 - 2016</span>
+                        <span class="experience-company">FUN and MOBILE · Full-time · Warsaw, Poland (On-site)</span>
+                        <span class="experience-date">Aug 2014 - Jun 2016</span>
                     </div>
-                    <div class="experience-company">FUN and MOBILE</div>
+                    <div class="experience-title">Junior iOS Developer</div>
                     <ul class="experience-list">
                         <li>Built iOS applications from scratch based on design mockups</li>
                         <li>Maintained and debugged legacy applications for iPad devices</li>
@@ -598,7 +578,23 @@ a:hover {
             <div class="section-content">
                 <div class="project-item">
                     <div class="project-header">
-                        <span class="project-title">iOS SDK for Digital Customer Service</span>
+                        <span class="project-title">Повітряна тривога (Air Raid Alert)</span>
+                        <span class="project-tech">[Swift, UIKit, Critical Alerts, Push Notifications, Notification Service & Content Extensions]</span>
+                    </div>
+                    <p class="project-description">Official nationwide air raid alert app for Ukraine, used by millions of people daily. Served as the main iOS developer during 2022-2024: owned the application architecture, led refactoring of the legacy codebase, and fixed critical bugs. Implemented critical push notifications along with Notification Service Extension for reliable alert delivery.</p>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-header">
+                        <span class="project-title">Smart Home Security App (NDA)</span>
+                        <span class="project-tech">[Swift, Objective-C, UIKit, SwiftUI, CoreBluetooth, XCTest, CocoaPods, Jenkins]</span>
+                    </div>
+                    <p class="project-description">Large-scale consumer iOS app for a smart home security ecosystem. Worked on device onboarding and provisioning flows (BLE discovery, SoftAP/Wi-Fi fallback, re-setup scenarios) and a shared device-setup SDK within a highly modular codebase. Improved build tooling, CI reliability, and the debug feature-flag menu. Contributed to the design and iOS implementation of a unified push notification SDK consolidating notification handling across multiple apps.</p>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-header">
+                        <span class="project-title">iOS SDK for Digital Customer Service (NDA)</span>
                         <span class="project-tech">[Swift, ReactiveSwift, WebRTC, Push Notifications, Sockets, React Native, Flutter, Ionic]</span>
                     </div>
                     <p class="project-description">Developed a robust B2B iOS SDK providing turnkey communication features for the banking sector. Implemented high-performance modules for real-time chat, VoIP audio, and video streaming. Prioritized enterprise security standards, memory optimization, and stable API design to ensure reliable functionality across diverse client architectures and critical financial environments. Maintained the core native iOS SDK while ensuring full feature parity and interoperability across React Native, Flutter, and Ionic wrappers.</p>
@@ -606,7 +602,7 @@ a:hover {
 
                 <div class="project-item">
                     <div class="project-header">
-                        <span class="project-title">Medical Diabetes Management System</span>
+                        <span class="project-title">Medical Diabetes Management System (NDA)</span>
                         <span class="project-tech">[Swift, C/C++, CoreBLE, CoreNFC, OpenSSL]</span>
                     </div>
                     <p class="project-description">IEC 62304 compliant iOS application for hybrid closed-loop insulin delivery system. Developed SDKs for Freestyle Libre 3 and Dexcom G6 sensors with real-time glucose monitoring via NFC and Bluetooth. Implemented OpenSSL encryption and iXGuard code obfuscation for medical-grade security.</p>
@@ -614,7 +610,7 @@ a:hover {
 
                 <div class="project-item">
                     <div class="project-header">
-                        <span class="project-title">Florida Real Estate Platform</span>
+                        <span class="project-title">Florida Real Estate Platform (NDA)</span>
                         <span class="project-tech">[Swift, UIKit, RxSwift, Realm, Firebase]</span>
                     </div>
                     <p class="project-description">Comprehensive real estate app for Florida market featuring property listings, off-market properties, advanced filtering, real-time alerts, mortgage calculators, and direct agent connections. Designed for seamless buyer and renter experience.</p>
@@ -622,7 +618,7 @@ a:hover {
 
                 <div class="project-item">
                     <div class="project-header">
-                        <span class="project-title">VPN App</span>
+                        <span class="project-title">VPN App (NDA)</span>
                         <span class="project-tech">[Swift, Network Extensions, Packet Tunnel Provider]</span>
                     </div>
                     <p class="project-description">Secure VPN application with custom VPN protocol implementation using Packet Tunnel Provider and Network Extensions. Subscription-based service offering advanced online security and complete internet freedom.</p>
@@ -630,7 +626,7 @@ a:hover {
 
                 <div class="project-item">
                     <div class="project-header">
-                        <span class="project-title">Hyperlocal Weather forecasting for U.S.</span>
+                        <span class="project-title">Hyperlocal Weather forecasting for U.S. (NDA)</span>
                         <span class="project-tech">[Swift, MVC, Google Maps, Realm]</span>
                     </div>
                     <p class="project-description">High-precision weather forecasting application with rich customizable user notifications and advanced mapping integration. Part of enterprise-level weather services platform.</p>
@@ -648,22 +644,6 @@ a:hover {
                     </div>
                     <div class="education-institution">Ivan Franko National University of Lviv</div>
                 </div>
-            </div>
-        </div>
-
-        <div class="footer">
-            <h2 class="section-title">$ cowsay</h2>
-            <div class="cowsay">
-                <pre> ___________________________________________________________
-/                                                           \
-| I am a lazy person, CV was generated overnight with AI.  |
-\ Take it with a grain of salt.                            /
- -----------------------------------------------------------
-        \   ^__^
-         \  (oo)\_______
-            (__)\       )\/\
-                ||----w |
-                ||     ||</pre>
             </div>
         </div>
 
