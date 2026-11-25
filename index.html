@@ -51,32 +51,6 @@
     --spacing-xl: 3rem;
 }
 
-/* Print-specific styles */
-@media print {
-    :root {
-        --bg-primary: #ffffff;
-        --bg-secondary: #f6f8fa;
-        --text-primary: #24292f;
-        --text-secondary: #57606a;
-        --border-color: #d0d7de;
-    }
-    
-    body {
-        background: white;
-    }
-    
-    .container {
-        max-width: 100%;
-        margin: 0;
-        padding: 1cm;
-        box-shadow: none;
-    }
-    
-    .section {
-        page-break-inside: avoid;
-    }
-}
-
 /* Body & Container */
 body {
     background: var(--bg-primary);
@@ -322,7 +296,7 @@ body {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .header {
         flex-direction: column;
     }
@@ -396,12 +370,6 @@ body {
     color: #fff;
 }
 
-@media print {
-    .download-btn-wrapper {
-        display: none;
-    }
-}
-
 /* Smooth transitions */
 a {
     color: var(--accent-blue);
@@ -417,6 +385,89 @@ a:hover {
 ::selection {
     background: var(--accent-blue);
     color: var(--bg-primary);
+}
+
+/* Print-specific styles (must stay last to override the rules above) */
+@page {
+    size: A4;
+    margin: 0;
+}
+
+@media print {
+    :root {
+        --font-size-base: 12px;
+        --font-size-small: 10.5px;
+        --font-size-large: 14px;
+    }
+
+    html,
+    body {
+        background: var(--bg-secondary);
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    body {
+        padding: 0;
+    }
+
+    .container {
+        max-width: none;
+        margin: 0;
+        padding: 1.2cm 1.4cm;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+    }
+
+    .header {
+        margin-bottom: var(--spacing-lg);
+        padding-bottom: var(--spacing-md);
+    }
+
+    .section-title {
+        break-after: avoid;
+        page-break-after: avoid;
+    }
+
+    .experience-item,
+    .project-item,
+    .education-item,
+    .skill-category,
+    .experience-list li {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    .experience-header,
+    .experience-title,
+    .project-header {
+        break-after: avoid;
+        page-break-after: avoid;
+    }
+
+    .experience-header,
+    .education-header {
+        gap: var(--spacing-sm);
+    }
+
+    .experience-date,
+    .education-date {
+        flex-shrink: 0;
+        white-space: nowrap;
+    }
+
+    .project-header {
+        flex-wrap: wrap;
+        column-gap: var(--spacing-sm);
+        row-gap: 0;
+    }
+
+    .download-btn-wrapper {
+        display: none;
+    }
 }
     </style>
 </head>
